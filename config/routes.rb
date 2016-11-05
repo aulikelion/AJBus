@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   root 'home#index'
   
   get 'home/index'
+  get '/station/huisu' => 'station#huisu'
   get '/station/:id' => 'station#getInfo'
 
   # The priority is based upon order of creation: first created -> highest priority.
