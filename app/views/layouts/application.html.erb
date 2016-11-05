@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>아주대 주변 버스 도착정보 AJBUS</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  
+
+  <link rel="stylesheet" href="//cdn.rawgit.com/hiun/NanumSquare/master/nanumsquare.css">
+  <meta name="theme-color" content="#F89734">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="keywords" content="programming, web, ruby, rails, html, css, js, likelion, aws" />
+  <meta name="author" content="J.W.Jeon the member of 4th likeLion." />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
+  <![endif]-->
+
+  <!-- CSS Reset -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" />
+</head>
+<body>
+  <header class="header">
+    <h1 class="headline">AJBUS  <small>by AUlikeLion</small></h1>
+    <ul class="header-subnav">
+      <li><a href="http://www.aulikelion.xyz">아주대학교 멋쟁이사자처럼</a></li>
+      <li><a href="/" class="is-active">AJBUS</a></li>
+      <li><a href="mailto:jwurbane97@ajou.ac.kr">Contact</a></li>
+    </ul>
+  </header>
+  
+  <%= yield %>
+  
+  <!-- FOOTER -->
+  <footer>
+    <div class="row column">
+      <p class="float-xs-right"><a href="#">최상단으로</a></p>
+      <img id="foot_logo" src="http://likelion.org/assets/likelion_text-b7b5aed6954af442181e1a7b82bf265963638a731bcfd839f343845c28a0947f.png" alt="likeLion_logo" />
+      <p id="org_name">4번째 멋쟁이사자처럼 at 아주대학교.  (2016)</p>
+    </div>
+  </footer>
+</body>
+</html>

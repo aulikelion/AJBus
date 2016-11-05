@@ -1,0 +1,127 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+html {
+  min-height: 100%;
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Nanum Square', 'Lato', sans-serif !important;
+  font-size: 1em;
+  line-height: 120%;
+  background-color: lightgrey !important;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
+
+footer{
+  background-color: white;
+  color: grey;
+  padding-top:    3rem;
+  padding-bottom: 3rem;
+}
+
+#foot_logo {
+  width: 12rem;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+footer > div p#org_name {
+  font-size:  1.6rem;
+}
+
+footer > div p#contact {
+  font-size: 1rem;
+}
+
+footer a, footer a:link, footer a:visited, footer a:active, footer a:hover{
+  color: skyblue !important;
+}
+
+.float-xs-right {
+    float:right;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  padding: 0.5rem;
+  min-height: 10.5rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 3px;
+  background-color: white;
+  vertical-align:middle;
+}
+
+.bus, .bus div table {
+    margin-top: 0.8rem;
+}
+
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); }
+  
+ .back2{
+     background-color: rgb(250,83,75);
+ }
+ 
+ .back1{
+     background-color: rgb(0,208,180);
+ }
+ 
+ .back3{
+     background-color: rgb(0,100,182);
+ }
+ 
+ .back4{
+     background-color: rgb(242,183,63);
+ }
+ 
+ .back5{
+     background-color: rgb(151,179,222);
+ }
+ 
+ .back6{
+   background-color: rgb(140,113,92);
+ }
+ 
+ .white-text{
+   color:white;
+ }
+ 
+ .white-text > a {
+   text-decoration: none;
+   color:white;
+ }
+ 
+ .white-text > a:hover{
+   color:lightgrey;
+ }
+ 
+ table > tbody > tr td > strong{
+     font-size: 1.5rem;
+     color: red;
+ }
+ 
+ .soon{
+     font-size:1.5rem;
+ }
