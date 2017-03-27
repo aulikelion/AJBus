@@ -31,11 +31,15 @@
         <%= if @routeIds.length == 0 then '운행시간이 아니거나 운행 중인 버스가 존재하지 않습니다.' end %>
         <% for i in 0..(@routeIds.length-1) do %>
             <% query = Bus.where(code: @routeIds[i].content).take %>
+            <% if query.nil? then %>
+            <% next %>
+            <% else %>
         <div class="large-4 medium-6 small-12 columns card back<%= query.type %> clearfix bus" align="center">
             <div class="large-5 medium-12 small-12 columns float-left">
                 <h1 class="white-text"><a class="busNum" href="http://m.gbis.go.kr/search/getBusRouteDetail.do?routeId=<%= @routeIds[i].content.to_s %>&osInfoType=M"><%= query.num %></a></h1>
                 <span class="secondary label"><%= if query.type == '1' then '일반시내버스' elsif query.type == '2' then '직행좌석버스' elsif query.type=='3' then '광역버스' elsif query.type=='4' then '마을버스' elsif  query.type=='5' then '시외버스' else '공항버스' end %></span>
             </div>
+            <% end %>
             <div class="large-7 medium-12 small-12 columns">
                 <table class="hover text-center">
                     <tbody>
