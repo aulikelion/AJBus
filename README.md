@@ -1,5 +1,8 @@
 <p align="center"><img src="./aulikelion_logo.png" width="150"/></p>
+
 # AJBus
+---
+
 아주대학교 버스정류장 실시간 정보 조회 웹서비스
 
 ![Screenshot](./AJBUS_screenshot.png)
