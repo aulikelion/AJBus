@@ -12,35 +12,14 @@
 <section id="stations">
     <div class="row column text-center">
         <h1>정류장 리스트</h1>
+        <% @stationInfo.each do |item| %>
         <div class="row column card">
-            <h1>아주대.아주대병원입구.한국자산관리공사</h1>
-            <a href="/station/203000066" class="large button">수원, 수지, 분당, 강남, 오산(202) 방향</a>
-            <a href="/station/202000005" class="large button">수원, 화성, 오산(20) 방향</a>
+            <h1><%= item['name'] %></h1>
+            <% item['items'].each do |eItem| %>
+            <a href="/station/<%= eItem['id'] %>" class="large button"><%= eItem['direction'] %></a>
+            <% end %>
         </div>
-        <div class="row column card">
-            <h1>광교중앙.아주대역환승센터</h1>
-            <a href="/station/203000399" class="large button">수원월드컵경기장, 동수원IC 방향</a>
-            <a href="/station/203000400" class="large button">상현역, 아주대병원동편, 광교호수공원 방향</a>
-        </div>
-        <div class="row column card">
-            <h1>아주대입구</h1>
-            <a href="/station/202000073" class="large button">[시내] 인계동, 매산로 방향</a>
-            <a href="/station/203000179" class="large button">[시내] 영통, 신갈 방향</a>
-            <a href="/station/202507420" class="large button">[시외] 수원종합버스터미널 방향</a>
-            <a href="/station/203508250" class="large button">[시외] 신갈시외버스터미널 방향</a>
-        </div>
-        <div class="row column card">
-            <h1>아주대병원</h1>
-            <a href="/station/203000170" class="large button">영통 방향</a>
-            <a href="/station/203000171" class="large button">우만동 방향</a>
-        </div>
+        <% end %>
     </div>
-</section>    
-<hr>
-<section>
-    <div class="row colum card text-center">
-        <br><br>
-        <h1>광교에듀타운.아주대 및 창현고교.아주대.유신고교 정류장은 미지원</h1>
-    </div> 
 </section>
-<hr>
+<hr />
