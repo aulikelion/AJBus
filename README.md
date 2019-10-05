@@ -1,24 +1,12 @@
+<p align="center"><img src="./aulikelion_logo.png" width="150"/></p>
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+# AJBus
+---
 
+아주대학교 버스정류장 실시간 정보 조회 웹서비스
 
-Welcome to your Rails project on Cloud9 IDE!
+![Screenshot](./AJBUS_screenshot.png)
 
-To get started, just do the following:
+![Screenshot](./AJBUS_screenshot_detail.png)
 
-1. Run the project with the "Run Project" button in the menu bar on top of the IDE.
-2. Preview your new app by clicking on the URL that appears in the Run panel below (https://new-ajbus-jwurbane97-1.c9users.io/).
-
-Happy coding!
-The Cloud9 IDE team
-
-
-## Support & Documentation
-
-Visit http://docs.c9.io for support, or to learn more about using Cloud9 IDE. 
-To watch some training videos, visit http://www.youtube.com/user/c9ide
+멋쟁이사자처럼 4기 활동 중 프로젝트로 구상, 개발된 서비스입니다.
